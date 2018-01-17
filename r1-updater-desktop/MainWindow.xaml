@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:r1_updater_desktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
         
+        Title="R1Sport-updater" Height="350" Width="525" ResizeMode="NoResize">
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.01"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Button x:Name="_saveSettings" Content="Save" HorizontalAlignment="Left" Margin="339,276,0,0" VerticalAlignment="Top" Width="75" Click="_saveSettings_Click"/>
+        <Button Content="Run now" HorizontalAlignment="Left" Margin="419,276,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" RenderTransformOrigin="0.185,-2.116"/>
+        <TextBox x:Name="_ds" HorizontalAlignment="Left" Height="23" Margin="118,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" />
+        <Label Content="Data source" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.099,0.074" Width="103" Height="27"/>
+        <TextBox x:Name="_dbname" HorizontalAlignment="Left" Height="23" Margin="118,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376"/>
+        <Label Content="Database name" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.099,0.074" Width="103" Height="27"/>
+        <TextBox x:Name="_target" HorizontalAlignment="Left" Height="23" Margin="118,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" />
+        <Label Content="Target" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.099,0.074" Width="103" Height="27"/>
+        <TextBox x:Name="_outuser" HorizontalAlignment="Left" Height="23" Margin="118,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" />
+        <Label Content="Username" HorizontalAlignment="Left" Margin="10,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.099,0.074" Width="103" Height="27"/>
+        <TextBox x:Name="_outpass" HorizontalAlignment="Left" Height="23" Margin="118,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" />
+        <Label Content="Password" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.099,0.074" Width="103" Height="27"/>
+        <CheckBox x:Name="_autorun" Content="Run every" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="_runevery" HorizontalAlignment="Left" Height="23" Margin="118,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="12" KeyDown="_runevery_KeyDown"/>
+        <Label Content="hours" HorizontalAlignment="Left" Margin="243,221,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.099,0.074" Width="103" Height="27"/>
+        <TextBox x:Name="_limit" HorizontalAlignment="Left" Height="23" Margin="118,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" KeyDown="_runevery_KeyDown"/>
+        <Label Content="Limit" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.099,0.074" Width="103" Height="27"/>
+
     </Grid>
 </Window>

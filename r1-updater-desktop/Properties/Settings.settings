@@ -1,7 +1,30 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="r1_updater_desktop.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ds" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost\sqlexpress</Value>
+    </Setting>
+    <Setting Name="dbname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Devpark.Fitness.r2</Value>
+    </Setting>
+    <Setting Name="target" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://r1sport.by/bot/r1-updater.php</Value>
+    </Setting>
+    <Setting Name="outuser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="outpass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">qwe123</Value>
+    </Setting>
+    <Setting Name="runevery" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="autorun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="limit" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
